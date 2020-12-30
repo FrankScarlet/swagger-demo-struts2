@@ -4,12 +4,20 @@ id="swagger-struts2" version="3.0">
 
   <filter>
     <filter-name>struts2</filter-name>
-    <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    <filter-class>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>struts2</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+  <filter>
+    <filter-name>swaggerFilter</filter-name>
+    <filter-class>com.cpjit.swagger4j.SwaggerFilter</filter-class>
+ </filter>
+ <filter-mapping>
+    <filter-name>swaggerFilter</filter-name>
+    <url-pattern>/doc/*</url-pattern>
+ </filter-mapping>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
