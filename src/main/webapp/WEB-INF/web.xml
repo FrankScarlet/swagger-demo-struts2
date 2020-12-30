@@ -16,8 +16,9 @@ id="swagger-struts2" version="3.0">
  </filter>
  <filter-mapping>
     <filter-name>swaggerFilter</filter-name>
-    <url-pattern>/doc/*</url-pattern>
+    <url-pattern>/api/*</url-pattern>
  </filter-mapping>
+ <!-- 原本默认是doc，这里写成api匹配package name -->
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>

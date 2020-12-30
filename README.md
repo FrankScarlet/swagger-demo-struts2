@@ -9,7 +9,15 @@
 ## 进展
 
 - [x] 纯文字API解析OK http://localhost:8080/api/ 
-- [ ] 在`web.xml`中加入`/doc/*`无效
+- [x] 可视化路径 ~~http://localhost:8080/doc/index.html~~ httpL//localhost:8080/api/index.html
+
+
+> 啊，我才发现这个关系，我把`web.xml`里的swagger对应的Filter匹配到`/api/`上，现在正常显示了一个API倒是
+
+### 问题
+
+- [ ] `api`返回的json，放入SwaggerEditor中解析错误
+- [ ] `/api/index.html`下的文字是乱码
 
 ## 最好能完成
 
